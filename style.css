@@ -8,9 +8,10 @@
 /* Container */
 .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: "Times New Roman", serif;
 }
 
 /* Header Styling */
@@ -21,20 +22,46 @@ header {
 
 header h1 {
     font-size: 36px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 header h2 {
     color: #006EB6;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Light Theme Styling */
+body {
+    background-color: white;
+    color: black;
+}
+
+body.light header h2 {
+    color: #006EB6;
+}
+
+/* Dark Theme Styling */
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark header h2 {
+    color: #66b3ff; /* Lighter blue for dark theme */
+}
+
+body.dark footer img {
+    content: url('BYUI-Logo-white.webp'); /* Replace logo with white logo in dark theme */
 }
 
 /* Content Section Styling */
 .content {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 40px;
 }
 
@@ -49,10 +76,10 @@ header h2 {
 /* Footer Styling */
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 footer img {
-    width: 150px;
+    width: 120px; /* Adjust logo size */
     height: auto;
 }

@@ -8,13 +8,19 @@
     <meta name="author" content="Srikanth">
     <title>BYU-Idaho Mission Statement</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="mission.js"></script>
 </head>
-<body>
+<body class="dark">
     <div class="container">
     <header>
+        <select id="themeSelector">
+            <option value="light">Light</option>
+            <option value="dark" selected>Dark</option>
+        </select>
         <h1>MISSION STATEMENT</h1>
         <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2>
     </header>
+
     <section class="content">
         <p>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
         <p>The university does this by:</p>
@@ -25,8 +31,10 @@
             <li>Delivering education that is affordable for students and the Church.</li>
         </ol>
     </section>
+    
     <footer>
-        <img src="logo.webp" alt="BYUI-Logo.webp">
+        <img src="BYUI-Logo.webp" alt="BYU-Idaho Logo">
     </footer>
+</div>
 </body>
 </html>
